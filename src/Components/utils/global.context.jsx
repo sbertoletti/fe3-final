@@ -46,11 +46,10 @@ const Context = ({children}) => {
         .then(res => dentiDispatch({type: "LISTA", payload: res.data}))
     }, [])
 
-    /* No me funciona
+    /* No me funciona */
     useEffect(() => {
         localStorage.setItem("favs", JSON.stringify(dentiState.favs))
     }, [dentiState.favs])
-    */
 
     // Retorno el provider
     return (
